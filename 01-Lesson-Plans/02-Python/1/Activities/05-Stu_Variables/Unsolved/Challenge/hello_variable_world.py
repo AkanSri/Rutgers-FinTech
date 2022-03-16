@@ -23,4 +23,4 @@ print(f"Apple's original stock price was ${original_price}")
 print(f"Apples current stock price is ${current_price}")
 
 # Print percent_increase to 2 decimal places using string formatting
-print("The percent increase is $" + "{:.2f}".format(percent_increase))
+print(f"The percent increase is % {round(percent_increase,2)}")
