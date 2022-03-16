@@ -24,8 +24,8 @@ percent_increase = increase / original_price * 100
 print( f"Percent Increase: {percent_increase}% ")
 
 if percent_increase >= 20:
-    print("Buy!")
-elif percent_increase <= -20:
     print("Sell!")
+elif percent_increase <= -20:
+    print("Buy!")
 else:
     print("Not enough activity to warrant buy or sell action")
