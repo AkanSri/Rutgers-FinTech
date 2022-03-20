@@ -6,7 +6,7 @@
 ---
 ## Overview and Origin
 
-* **Name of company**   
+* **Name of company
 <img src="~/../Assets/coinbaselogo.png" alt="drawing" width="200"/>
 * **When was the company incorporated?**
     * <span style ="font-size:18;"> 2012 </span>
