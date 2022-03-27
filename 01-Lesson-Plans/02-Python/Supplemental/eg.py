@@ -32,7 +32,7 @@ print("hasOne: " + str(hasOne))
 # C : What is a list comprehension?
 # C : What is the modulus operator?
 evenList = [
-    x for x in newList if x % 2 == 0
+    _ for _ in newList if _ % 2 == 0
 ]
 
 print("Even List: " + str(evenList))
