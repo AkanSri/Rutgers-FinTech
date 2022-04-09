@@ -14,7 +14,7 @@ Parameter(s): Input dataframe (returns_df)
 Returns: Output dataframe (cumulative_return)
 '''
 def cumulative_returns(returns_df):
-    cumulative_return = (1 + returns_df).cumprod() - 1
+    cumulative_return = (1 + returns_df).cumprod()
     return (cumulative_return)
 
 '''
@@ -28,21 +28,6 @@ def annualized_std(returns_std_df, calc_std):
     ann_std = returns_std_df * np.sqrt(252)
     return(ann_std)
 
-'''
-Calculates weighted Returns
-Parameter(s): Input dataframe(returns_df), Initial investment(init_invest)
-Returns: Output dataframe
-'''
-def weighted_portfolio_returns(returns_df, init_invest):
-    w = 1/len(returns_df)    
-    weights=[]
-    for i in returns_df:
-        weights.append(w)
-    
-    cumulative_ret = cumulative_returns(returns_df.dot(weights))
-    returns = init_invest * cumulative_ret
-
-    return returns
 
 '''
 pct_change() - sp500_history_data.pct_change()
