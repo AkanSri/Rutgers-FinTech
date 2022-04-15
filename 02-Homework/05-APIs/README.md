@@ -1,6 +1,6 @@
 # Unit 5 - Financial Planning
 
-### Part 1 - Personal Finance Planner [//github.com/AkanSri/Rutgers-FinTech/blob/dbb7de38bfc477ff27412e4c1d10f3071ad53995/02-Homework/05-APIs/Starter_Code/#Part-1---Personal-Finance-Planner]
+### Part 1 - Personal Finance Planner (github.com/AkanSri/Rutgers-FinTech/blob/dbb7de38bfc477ff27412e4c1d10f3071ad53995/02-Homework/05-APIs/Starter_Code/#Part-1---Personal-Finance-Planner)
 
 First, I created a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund. I accomplished this by:
  * Collecting Crypto Prices Using the `requests` Library
