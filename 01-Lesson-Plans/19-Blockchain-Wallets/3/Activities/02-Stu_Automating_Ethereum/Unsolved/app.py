@@ -8,8 +8,7 @@ w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:7545'))
 
 # @TODO
 # Update the imports for the functions coming from ethereum.py
-from ethereum import generate_account
-
+from ethereum import *
 
 ################################################################################
 # Streamlit Code
@@ -41,7 +40,10 @@ st.markdown("## Ethereum Account Balance:")
 
 # @TODO
 # Call the `get_balance` function and write the account balance to the screen
+ether_balance = get_balance(account.address)
 
+#Write the ether_balance to the Streamlit page.
+st.write(f"Ether Balance: {ether_balance} ETH")
 
 #######################################
 
@@ -53,7 +55,13 @@ st.markdown("## An Ethereum Transaction:")
 
 # @TODO
 # Create inputs for the receiver address and ether amount
-
+# A text input field that will take in the receiver's Ethereum address. Set this equal to a variable called receiver
+receiver = st.text_input("Receiver's Address")
+ether = st.text_input("Ether Amount")
 
 # @TODO
 # Create a button that calls the `send_transaction` function and returns the transaction hash
+if (st.button("Send Transaction")):
+    transaction_hash = send_transaction(account, receiver, ether)
+    st.write("## Ethereum Transaction Hash")
+    st.write(f"Transaction Hash: {transaction_hash.hex()}")

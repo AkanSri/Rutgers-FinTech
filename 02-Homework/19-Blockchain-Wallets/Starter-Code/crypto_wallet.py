@@ -70,4 +70,4 @@ def send_transaction(w3, account, to, wage):
     signed_tx = account.signTransaction(raw_tx)
 
     # Send the signed transactions
-    return w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+    return w3.eth.sendRawTransaction(signed_tx.rawTransaction).hex()
